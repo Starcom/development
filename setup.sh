@@ -42,11 +42,29 @@ install_tools() {
 }
 
 install_apps() {
-    apps=(1password adobe-acrobat-reader bear alfred docker google-chrome iterm2 java macvim spectacle spotify)
+    apps=(\
+        1password \
+        alfred \
+        docker \
+        firefox \
+        font-source-code-pro \
+        github-desktop \
+        google-chrome \
+        iterm2 \
+        java \
+        spectacle \
+        spotify \
+        sublime-text \
+        qlstephen \
+        vivaldi)
     # install apps
     for a in ${apps[@]}; do
         brew cask install $a
     done;
+}
+
+finder() {
+    defaults write com.apple.finder AppleShowAllFiles YES
 }
 
 generate_rsa_key() {
