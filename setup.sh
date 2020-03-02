@@ -1,4 +1,11 @@
 #! /bin/zsh
+SRC_DIR=~/src
+
+dirs() {
+    mkdir -p ~/bin
+    mkdir -p $SRC_DIR
+}
+
 xcode_install() {
     xcode-select -p || xcode-select --install
 }
