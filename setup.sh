@@ -55,7 +55,7 @@ install_apps() {
         docker \
         firefox \
         font-source-code-pro \
-        github-desktop \
+        github \
         google-chrome \
         iterm2 \
         java \
