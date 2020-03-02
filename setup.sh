@@ -68,6 +68,7 @@ install_apps() {
     for a in ${apps[@]}; do
         brew cask install $a
     done;
+    sublime_text
 }
 
 finder() {
@@ -86,6 +87,10 @@ generate_rsa_key() {
 install_python() {
     pyenv install 2.7.15
     pyenv install 3.6.7
+}
+
+sublime_text() {
+    ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/bin/subl
 }
 
 init() {
