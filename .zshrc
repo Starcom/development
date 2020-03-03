@@ -99,6 +99,15 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias cds="cd ~/src"
+alias ls="ls -alhG"
+alias gc="git checkout"
+alias gf="git fetch"
+alias gl="git log"
+alias gp="git push"
+alias gr="git reset"
+alias gr="git reset --hard"
+alias gs="git status"
 
 # Pyenv
 eval "$(pyenv init -)"
