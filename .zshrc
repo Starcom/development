@@ -1,5 +1,7 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PYENV_ROOT="$HOME/.pyenv"
+export GOPATH="$HOME/go"
+export PATH=$PYENV_ROOT/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$GOPATH/bin
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/jon/.oh-my-zsh"
