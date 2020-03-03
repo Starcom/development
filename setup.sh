@@ -71,10 +71,6 @@ install_apps() {
     sublime_text
 }
 
-finder() {
-    defaults write com.apple.finder AppleShowAllFiles YES
-}
-
 generate_rsa_key() {
     echo "What email should be used for rsa key?"
     read email
@@ -87,6 +83,11 @@ generate_rsa_key() {
 install_python() {
     pyenv install 2.7.15
     pyenv install 3.6.7
+}
+
+os_settings() {
+    defaults write com.apple.Finder AppleShowAllFiles TRUE
+    killall Finder
 }
 
 sublime_text() {
@@ -103,4 +104,6 @@ init() {
     install_tools
 
     install_apps
+
+    os_settings
 }
